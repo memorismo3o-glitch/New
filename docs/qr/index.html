@@ -134,7 +134,8 @@
 
   /* 이야기 · 확인 */
   .who{display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:center;margin-bottom:10px}
-  .who .blob{width:48px;height:48px;font-size:10px}
+  .who .blob{width:48px;height:48px;font-size:10px;overflow:hidden}
+  .who .blob img{width:100%;height:100%;display:block;object-fit:cover}
   .who b{display:block;font-size:14px} .who small{font-size:12px;color:var(--muted)}
   .story{border-top:1px solid var(--line);padding-top:10px;margin:0;font-size:13px}
   ul.tips{margin:0;padding-left:18px;font-size:13px} ul.tips li{margin:4px 0}
@@ -225,8 +226,8 @@
   <section id="story">
     <h2 data-t="storyTitle"></h2>
     <div class="card">
-      <div class="who"><div class="blob p" data-t="porong"></div><div><b data-t="porong"></b><small data-t="porongRole"></small></div></div>
-      <div class="who"><div class="blob y" data-t="yeouri"></div><div><b data-t="yeouri"></b><small data-t="yeouriRole"></small></div></div>
+      <div class="who"><div class="blob p"><img src="랜딩_이미지/얼굴_포롱이.webp" alt="포롱이"></div><div><b data-t="porong"></b><small data-t="porongRole"></small></div></div>
+      <div class="who"><div class="blob y"><img src="랜딩_이미지/얼굴_여울이.webp" alt="여울이"></div><div><b data-t="yeouri"></b><small data-t="yeouriRole"></small></div></div>
       <p class="story" data-t="story"></p>
     </div>
   </section>
